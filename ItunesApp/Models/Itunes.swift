@@ -14,11 +14,11 @@ struct Root: Codable {
 }
 
 struct Feed: Codable {
-    let results: [Song]
+    let results: [Media]
 }
 
-struct Song: Codable {
+struct Media: Codable {
     let name: String
     let artworkUrl100: String
+    let url: String
 }
-

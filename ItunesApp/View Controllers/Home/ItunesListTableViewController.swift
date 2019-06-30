@@ -17,25 +17,35 @@ class ItunesListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetch()
+        fetchSongs()
+        fetchAlbums()
     }
     
     //MARK: Data Source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //returning items in array
-        return itunesController.songs.count
+        //returning item count in array
+        if section == 0 {
+           return itunesController.songs.count
+        } else if section == 1 {
+            return itunesController.albums.count
+        } else {
+            return 0
+        }
+    }
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     //configure cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MediaCell", for: indexPath)
+        let media = mediaFor(indexPath: indexPath)
         guard let mediaCell = cell as? ItunesMediaTableViewCell else {return cell}
         //passing data
         mediaCell.dataGetter = dataGetter
-        let song = itunesController.songs[indexPath.row]
-        mediaCell.song = song
-        
+        mediaCell.media = media
         return cell
     }
     
@@ -60,12 +70,17 @@ class ItunesListTableViewController: UITableViewController {
         //logic for each section
         if (section == 0) {
             return "Songs"
-        } else {
+        } else if (section == 1) {
+            return "Albums"
+        }
+        else {
             return nil
         }
     }
     
-    func fetch() {
+    //Fetching songs and albums
+    
+    func fetchSongs() {
         itunesController.fetchTopSongs { (error) in
             DispatchQueue.main.async {
                 if let error = error {
@@ -77,6 +92,26 @@ class ItunesListTableViewController: UITableViewController {
         }
     }
     
+    func fetchAlbums() {
+        itunesController.fetchTopAlbums { (error) in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print(error)
+                }
+                self.tableView.reloadData()
+                print("Table reloaded")
+            }
+        }
+
+    }
     
-    
+    //logic to get media index path
+    private func mediaFor(indexPath: IndexPath) -> Media {
+        if indexPath.section == 0 {
+            return itunesController.songs[indexPath.row]
+        } else {
+            return itunesController.albums[indexPath.row]
+        }
+    }
+
 }
