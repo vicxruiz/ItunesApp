@@ -17,6 +17,7 @@
 		572D2C2622C9076D003D5556 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2522C9076D003D5556 /* Service.swift */; };
 		572D2C2822C90A14003D5556 /* ItunesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */; };
 		572D2C2A22C90A49003D5556 /* ItunesMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2922C90A49003D5556 /* ItunesMediaTableViewCell.swift */; };
+		572D2C2F22C911B7003D5556 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2E22C911B7003D5556 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		572D2C2522C9076D003D5556 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListTableViewController.swift; sourceTree = "<group>"; };
 		572D2C2922C90A49003D5556 /* ItunesMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMediaTableViewCell.swift; sourceTree = "<group>"; };
+		572D2C2E22C911B7003D5556 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,9 @@
 		572D2C1722C8FF0A003D5556 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */,
+				572D2C2D22C91199003D5556 /* Profile */,
+				572D2C2C22C91189003D5556 /* Home */,
+				572D2C2B22C9117E003D5556 /* Navigation */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -141,6 +145,29 @@
 				572D2C1C22C8FF7F003D5556 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		572D2C2B22C9117E003D5556 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				572D2C2E22C911B7003D5556 /* MainTabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		572D2C2C22C91189003D5556 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		572D2C2D22C91199003D5556 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +243,7 @@
 			files = (
 				572D2C2122C9056E003D5556 /* DataGetter.swift in Sources */,
 				572D2C2422C90627003D5556 /* ItunesController.swift in Sources */,
+				572D2C2F22C911B7003D5556 /* MainTabBarController.swift in Sources */,
 				572D2C2622C9076D003D5556 /* Service.swift in Sources */,
 				572D2C2822C90A14003D5556 /* ItunesListTableViewController.swift in Sources */,
 				572D2C2A22C90A49003D5556 /* ItunesMediaTableViewCell.swift in Sources */,
