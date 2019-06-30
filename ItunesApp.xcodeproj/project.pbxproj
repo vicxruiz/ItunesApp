@@ -14,6 +14,7 @@
 		572D2C1F22C903B9003D5556 /* Itunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C1E22C903B9003D5556 /* Itunes.swift */; };
 		572D2C2122C9056E003D5556 /* DataGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2022C9056E003D5556 /* DataGetter.swift */; };
 		572D2C2422C90627003D5556 /* ItunesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2322C90627003D5556 /* ItunesController.swift */; };
+		572D2C2622C9076D003D5556 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2522C9076D003D5556 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		572D2C1E22C903B9003D5556 /* Itunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itunes.swift; sourceTree = "<group>"; };
 		572D2C2022C9056E003D5556 /* DataGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGetter.swift; sourceTree = "<group>"; };
 		572D2C2322C90627003D5556 /* ItunesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesController.swift; sourceTree = "<group>"; };
+		572D2C2522C9076D003D5556 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		572D2C1A22C8FF1E003D5556 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				572D2C2522C9076D003D5556 /* Service.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				572D2C2122C9056E003D5556 /* DataGetter.swift in Sources */,
 				572D2C2422C90627003D5556 /* ItunesController.swift in Sources */,
+				572D2C2622C9076D003D5556 /* Service.swift in Sources */,
 				572D2C0322C8FEC5003D5556 /* AppDelegate.swift in Sources */,
 				572D2C1F22C903B9003D5556 /* Itunes.swift in Sources */,
 			);
