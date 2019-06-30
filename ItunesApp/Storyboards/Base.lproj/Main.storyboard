@@ -16,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vxv-eA-coD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.017366571349999999" green="0.1177230999" blue="0.26229584220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MediaCell" rowHeight="103" id="8j3-AD-OHe" customClass="ItunesMediaTableViewCell" customModule="ItunesApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="103"/>
@@ -36,9 +36,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-SR-Gm2">
-                                                    <rect key="frame" x="118" y="28.5" width="256" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="118" y="28.5" width="256" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -51,6 +51,7 @@
                                         <constraint firstItem="PNa-mA-Aax" firstAttribute="top" secondItem="S6W-bl-qPP" secondAttribute="topMargin" constant="2" id="o1p-Ck-Ftp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.017366571349999999" green="0.1177230999" blue="0.26229584220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="mediaImageView" destination="seI-Wh-9s0" id="44Q-L3-rX2"/>
                                     <outlet property="mediaNameLabel" destination="Xwp-SR-Gm2" id="zZB-q9-M9X"/>
@@ -68,15 +69,21 @@
             </objects>
             <point key="canvasLocation" x="2028.985507246377" y="188.83928571428569"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="7kQ-pD-Tzt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hou-oL-45C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="BEm-o6-9ud"/>
+                    <tabBarItem key="tabBarItem" title="" image="fire (1)" id="BEm-o6-9ud">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ff9-HF-avN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.017366571349999999" green="0.1177230999" blue="0.26229584220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -87,14 +94,15 @@
             </objects>
             <point key="canvasLocation" x="1118.840579710145" y="188.83928571428569"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="oFB-7B-xbV">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nfe-TE-QWw" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nfe-TE-QWw" customClass="MainTabBarController" customModule="ItunesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Npq-Mi-eY0">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.017366571349999999" green="0.1177230999" blue="0.26229584220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.017366571351885796" green="0.11772309988737106" blue="0.26229584217071533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Hou-oL-45C" kind="relationship" relationship="viewControllers" id="sud-gu-Hxn"/>
@@ -105,4 +113,7 @@
             <point key="canvasLocation" x="-255" y="889"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fire (1)" width="32" height="32"/>
+    </resources>
 </document>

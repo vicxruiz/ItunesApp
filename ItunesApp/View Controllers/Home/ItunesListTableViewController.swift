@@ -41,17 +41,13 @@ class ItunesListTableViewController: UITableViewController {
     
     //MARK: SectionHeader
     
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor.white
-    }
-    
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         //updates header view ui
-        view.tintColor = UIColor.white
+        view.tintColor = Service.itunesBaseColor
         guard let header = view as? UITableViewHeaderFooterView else {return}
         
         header.textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
-        header.textLabel?.textColor = UIColor.lightGray
+        header.textLabel?.textColor = Service.itunesSecondaryColor
         header.textLabel?.textAlignment = .left
     }
     

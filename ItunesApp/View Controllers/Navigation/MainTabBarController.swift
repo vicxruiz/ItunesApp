@@ -21,7 +21,7 @@ class MainTabBarController: UITabBarController {
     
     fileprivate func setupViewControllers() {
         tabBar.unselectedItemTintColor = Service.designGrayColor
-        tabBar.tintColor = Service.itunesBaseColor
+        tabBar.tintColor = Service.itunesSecondaryColor
     }
     
 }
