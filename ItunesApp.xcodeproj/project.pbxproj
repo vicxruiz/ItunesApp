@@ -11,6 +11,7 @@
 		572D2C0822C8FEC5003D5556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572D2C0622C8FEC5003D5556 /* Main.storyboard */; };
 		572D2C0A22C8FECA003D5556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572D2C0922C8FECA003D5556 /* Assets.xcassets */; };
 		572D2C1D22C8FF7F003D5556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572D2C1C22C8FF7F003D5556 /* LaunchScreen.storyboard */; };
+		572D2C1F22C903B9003D5556 /* Itunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C1E22C903B9003D5556 /* Itunes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		572D2C0922C8FECA003D5556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572D2C0E22C8FECA003D5556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572D2C1C22C8FF7F003D5556 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		572D2C1E22C903B9003D5556 /* Itunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itunes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		572D2C1522C8FEE7003D5556 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				572D2C1E22C903B9003D5556 /* Itunes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				572D2C0322C8FEC5003D5556 /* AppDelegate.swift in Sources */,
+				572D2C1F22C903B9003D5556 /* Itunes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
