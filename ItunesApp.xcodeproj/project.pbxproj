@@ -15,6 +15,8 @@
 		572D2C2122C9056E003D5556 /* DataGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2022C9056E003D5556 /* DataGetter.swift */; };
 		572D2C2422C90627003D5556 /* ItunesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2322C90627003D5556 /* ItunesController.swift */; };
 		572D2C2622C9076D003D5556 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2522C9076D003D5556 /* Service.swift */; };
+		572D2C2822C90A14003D5556 /* ItunesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */; };
+		572D2C2A22C90A49003D5556 /* ItunesMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D2C2922C90A49003D5556 /* ItunesMediaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		572D2C2022C9056E003D5556 /* DataGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGetter.swift; sourceTree = "<group>"; };
 		572D2C2322C90627003D5556 /* ItunesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesController.swift; sourceTree = "<group>"; };
 		572D2C2522C9076D003D5556 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListTableViewController.swift; sourceTree = "<group>"; };
+		572D2C2922C90A49003D5556 /* ItunesMediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMediaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		572D2C1722C8FF0A003D5556 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				572D2C2722C90A14003D5556 /* ItunesListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 		572D2C1822C8FF12003D5556 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				572D2C2922C90A49003D5556 /* ItunesMediaTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 				572D2C2122C9056E003D5556 /* DataGetter.swift in Sources */,
 				572D2C2422C90627003D5556 /* ItunesController.swift in Sources */,
 				572D2C2622C9076D003D5556 /* Service.swift in Sources */,
+				572D2C2822C90A14003D5556 /* ItunesListTableViewController.swift in Sources */,
+				572D2C2A22C90A49003D5556 /* ItunesMediaTableViewCell.swift in Sources */,
 				572D2C0322C8FEC5003D5556 /* AppDelegate.swift in Sources */,
 				572D2C1F22C903B9003D5556 /* Itunes.swift in Sources */,
 			);
