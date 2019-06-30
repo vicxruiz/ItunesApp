@@ -11,7 +11,7 @@ import Foundation
 class ItunesController {
     //passing data
     let dataGetter = DataGetter()
-    let topSongsURL = URL(string: "https://rss.itunes.apple.com/api/v1/us/apple-music/top-songs/all/50/explicit.json")!
+    let topSongsURL = URL(string: "https://rss.itunes.apple.com/api/v1/us/apple-music/top-songs/all/10/explicit.json")!
     var songs: [Song] = []
     
     enum HTTPMethod: String {
